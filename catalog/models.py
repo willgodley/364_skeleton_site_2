@@ -83,6 +83,7 @@ class BookInstance(models.Model):
 
 class Author(models.Model):
     """Model representing an author."""
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, help_text='Unique ID for this particular author across whole library')
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     date_of_birth = models.DateField(null=True, blank=True)
