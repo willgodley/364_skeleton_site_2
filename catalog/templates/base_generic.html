@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="wa4e" content="3cec07e9ba5f5bb252d13f5f431e4bbb">
+    <meta name="wa4e" content="e2c0be24560d78c5e599c2a9c9d0bbd2">
 
     {% block title %}<title>Local Library</title>{% endblock %}
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
         <ul class="sidebar-nav">
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'books' %}">All books</a></li>
-          <li><a href="">All authors</a></li>
+          <li><a href="{% url 'authors' %}">All authors</a></li>
         </ul>
      {% endblock %}
       </div>
